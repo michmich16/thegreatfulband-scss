@@ -54,11 +54,11 @@ header {
         // background: transparent;
 
         &::before {
-            transform: rotate(90deg) translateX(-10px);
+            transform: rotate(90deg);
         }
 
         &::after {
-            transform: rotate(90deg) translateX(-10px);
+            transform: rotate(90deg);
         }
     }
 }

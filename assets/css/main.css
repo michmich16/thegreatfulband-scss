@@ -48,10 +48,10 @@ header {
   transform: rotate(45deg);
 }
 .menu-btn.open .menu-btn__burger::before {
-  transform: rotate(90deg) translateX(-10px);
+  transform: rotate(90deg);
 }
 .menu-btn.open .menu-btn__burger::after {
-  transform: rotate(90deg) translateX(-10px);
+  transform: rotate(90deg);
 }
 
 .nav-menu {
