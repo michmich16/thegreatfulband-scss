@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    h1{
+        text-transform: uppercase;
+    }
+}
