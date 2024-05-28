@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
 }
 
 header {
@@ -84,6 +85,8 @@ header {
 
         li {
             margin: 20px 0;
+            display: flex;
+            justify-content: center;
 
             button {
                 color: #fff;
