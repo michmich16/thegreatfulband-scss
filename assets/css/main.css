@@ -1,12 +1,75 @@
+/* Define variables */
+/* Global styles */
 body {
-  background-color: black;
-  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
 }
 
-.hero {
-  display: flex;
-  justify-content: center;
+/* Header and Navigation styles */
+header {
+  background-color: #3498db;
+  padding: 1rem;
 }
-.hero h1 {
-  text-transform: uppercase;
+header .logo {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .menu-toggle {
+  display: block;
+  cursor: pointer;
+}
+header nav .menu-toggle .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+header nav .nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  flex-direction: column;
+}
+header nav .nav-list li {
+  margin: 0.5rem 0;
+}
+header nav .nav-list li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+header nav .nav-list li a:hover {
+  background-color: #2ecc71;
+}
+header nav .nav-list.active {
+  display: flex;
+}
+
+/* Media query for desktop */
+@media (min-width: 768px) {
+  nav .menu-toggle {
+    display: none;
+  }
+  nav .nav-list {
+    display: flex;
+    flex-direction: row;
+  }
+  nav .nav-list li {
+    margin: 0;
+  }
+  nav .nav-list li a {
+    padding: 1rem;
+  }
 }/*# sourceMappingURL=main.css.map */

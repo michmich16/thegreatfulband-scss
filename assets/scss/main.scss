@@ -1,12 +1,93 @@
-body{
-    background-color: black;
-    color: white;
+/* Define variables */
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$white-color: #ffffff;
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: $white-color;
 }
 
-.hero{
-    display: flex;
-    justify-content: center;
-    h1{
-        text-transform: uppercase;
+/* Header and Navigation styles */
+header {
+    background-color: $primary-color;
+    padding: 1rem;
+
+    .logo {
+        color: $white-color;
+        font-size: 1.5rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .menu-toggle {
+            display: block;
+            cursor: pointer;
+
+            .bar {
+                display: block;
+                width: 25px;
+                height: 3px;
+                margin: 5px auto;
+                background-color: $white-color;
+                transition: all 0.3s ease;
+            }
+        }
+
+        .nav-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: none;
+            flex-direction: column;
+
+            li {
+                margin: 0.5rem 0;
+
+                a {
+                    color: $white-color;
+                    text-decoration: none;
+                    padding: 0.5rem 1rem;
+                    display: block;
+                    transition: background-color 0.3s ease;
+
+                    &:hover {
+                        background-color: $secondary-color;
+                    }
+                }
+            }
+        }
+
+        .nav-list.active {
+            display: flex;
+        }
+    }
+}
+
+/* Media query for desktop */
+@media(min-width: 768px) {
+    nav {
+        .menu-toggle {
+            display: none;
+        }
+
+        .nav-list {
+            display: flex;
+            flex-direction: row;
+
+            li {
+                margin: 0;
+
+                a {
+                    padding: 1rem;
+                }
+            }
+        }
     }
 }

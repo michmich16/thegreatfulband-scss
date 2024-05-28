@@ -3,13 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile First Website</title>
     <link rel="stylesheet" href="./assets/css/main.css">
-    <title>Document</title>
+    <script src="./assets/js/main.js" defer></script>
 </head>
 <body>
-    <div class="hero">
-        <h1>The Greatful Band</h1>
-    </div>
-    
+    <header>
+        <nav>
+            <div class="logo">MyWebsite</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Welcome to My Mobile First Website</h1>
+            <p>This is a simple mobile-first website example with a responsive menu.</p>
+        </section>
+    </main>
 </body>
 </html>
