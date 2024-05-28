@@ -3,32 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile First Website</title>
+    <title>Hamburger Menu Example</title>
     <link rel="stylesheet" href="./assets/css/main.css">
     <script src="./assets/js/main.js" defer></script>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">MyWebsite</div>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="nav-list" id="nav-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="menu-btn" id="menu-btn">
+            <div class="menu-btn__burger"></div>
+        </div>
     </header>
-
+    <nav class="nav-menu" id="nav-menu">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#discography">Discography</a></li>
+        </ul>
+    </nav>
     <main>
-        <section>
-            <h1>Welcome to My Mobile First Website</h1>
-            <p>This is a simple mobile-first website example with a responsive menu.</p>
+        <section id="about">
+            <h1>About</h1>
+            <p>This is the about section.</p>
+        </section>
+        <section id="tours">
+            <h1>Tours</h1>
+            <p>This is the tours section.</p>
+        </section>
+        <section id="media">
+            <h1>Media</h1>
+            <p>This is the media section.</p>
+        </section>
+        <section id="discography">
+            <h1>Discography</h1>
+            <p>This is the discography section.</p>
         </section>
     </main>
 </body>
