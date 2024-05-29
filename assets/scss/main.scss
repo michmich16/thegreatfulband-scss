@@ -119,6 +119,7 @@ body {
     .hero {
       img {
         width: 100%;
+        filter: saturate(0);
       }
     }
   }
