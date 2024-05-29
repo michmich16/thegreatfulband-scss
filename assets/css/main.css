@@ -1,6 +1,8 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #111111;
+  color: white;
 }
 body.noscroll {
   overflow: hidden;
@@ -97,7 +99,12 @@ header {
 }
 
 main {
-  padding: 20px;
+  padding: 10px 20px;
+}
+main .hero h1 {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
 }
 main .hero img {
   width: 100%;
