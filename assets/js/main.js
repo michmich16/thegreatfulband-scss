@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const body = document.body;
 
     menuBtn.addEventListener('click', () => {
-        menuBtn.classList.toggle('open');
-        navMenu.classList.toggle('open');
-        body.classList.toggle('noscroll');
+        menuBtn.classList.toggle('open'); /*burger menu trigger*/
+        navMenu.classList.toggle('open'); /*open nav menu*/
+        body.classList.toggle('noscroll'); /*block scrolling*/
     });
 });
