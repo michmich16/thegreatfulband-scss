@@ -109,4 +109,79 @@ main .hero h1 {
 main .hero img {
   width: 100%;
   filter: saturate(0);
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+footer .footer-content .address,
+footer .footer-content .contact-form {
+  flex: 1;
+  margin: 0 20px;
+}
+footer .footer-content .address h3,
+footer .footer-content .contact-form h3 {
+  margin-top: 0;
+}
+footer .footer-content .address p,
+footer .footer-content .address label,
+footer .footer-content .contact-form p,
+footer .footer-content .contact-form label {
+  margin: 5px 0;
+}
+footer .footer-content .address input,
+footer .footer-content .address textarea,
+footer .footer-content .contact-form input,
+footer .footer-content .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+footer .footer-content button {
+  background-color: #ffc800;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+footer .footer-content button:hover {
+  background-color: #ffd000;
+}
+
+.hero h1 {
+  background: linear-gradient(89.97deg, #ff0000 1.84%, #22ff00 102.67%);
+  animation: text 15s infinite forwards;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes text {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  25% {
+    filter: hue-rotate(360deg);
+  }
+  50% {
+    filter: hue-rotate(-160deg);
+  }
+  75% {
+    filter: hue-rotate(200deg);
+  }
+  100% {
+    filter: hue-rotate(0deg);
+  }
 }/*# sourceMappingURL=main.css.map */
