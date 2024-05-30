@@ -150,9 +150,9 @@ footer {
     width: 100%;
 
     .address,
-    .contact-form {
+    .subscribe-form {
       flex: 1;
-      margin: 0 20px;
+      margin: 0 30px;
 
       h3 {
         margin-top: 0;
@@ -163,13 +163,15 @@ footer {
         margin: 5px 0;
       }
 
-      input,
-      textarea {
+      input {
         width: 100%;
         padding: 10px;
         margin: 5px 0 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
+      }
+      a {
+        color: #ffc800;
       }
     }
 
@@ -218,5 +220,11 @@ footer {
     100% {
       filter: hue-rotate(0deg);
     }
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .footer-content{
+    display: block;
   }
 }

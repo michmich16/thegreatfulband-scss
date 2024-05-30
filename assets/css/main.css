@@ -125,29 +125,31 @@ footer .footer-content {
   width: 100%;
 }
 footer .footer-content .address,
-footer .footer-content .contact-form {
+footer .footer-content .subscribe-form {
   flex: 1;
-  margin: 0 20px;
+  margin: 0 30px;
 }
 footer .footer-content .address h3,
-footer .footer-content .contact-form h3 {
+footer .footer-content .subscribe-form h3 {
   margin-top: 0;
 }
 footer .footer-content .address p,
 footer .footer-content .address label,
-footer .footer-content .contact-form p,
-footer .footer-content .contact-form label {
+footer .footer-content .subscribe-form p,
+footer .footer-content .subscribe-form label {
   margin: 5px 0;
 }
 footer .footer-content .address input,
-footer .footer-content .address textarea,
-footer .footer-content .contact-form input,
-footer .footer-content .contact-form textarea {
+footer .footer-content .subscribe-form input {
   width: 100%;
   padding: 10px;
   margin: 5px 0 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+footer .footer-content .address a,
+footer .footer-content .subscribe-form a {
+  color: #ffc800;
 }
 footer .footer-content button {
   background-color: #ffc800;
@@ -183,5 +185,11 @@ footer .footer-content button:hover {
   }
   100% {
     filter: hue-rotate(0deg);
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .footer-content {
+    display: block;
   }
 }/*# sourceMappingURL=main.css.map */
